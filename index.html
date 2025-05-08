@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Строительные инструменты - Магазин профессионального оборудования</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ПрофИнструмент</h1>
+                <p>Ваш надежный поставщик строительного оборудования</p>
+            </div>
+            <div class="header-contacts">
+                <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Строителей, 15</p>
+            </div>
+            <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="#catalog"><i class="fas fa-tools"></i> Каталог</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> О нас</a></li>
+                <li><a href="#delivery"><i class="fas fa-truck"></i> Доставка</a></li>
+                <li><a href="#reviews"><i class="fas fa-comments"></i> Отзывы</a></li>
+                <li><a href="#contacts"><i class="fas fa-address-book"></i> Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Профессиональные инструменты для строительства и ремонта</h2>
+            <p>Широкий ассортимент качественного оборудования от ведущих производителей</p>
+            <a href="#catalog" class="btn">В каталог</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Гарантия качества</h3>
+                <p>Все товары сертифицированы и имеют гарантию от производителя</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-truck-fast"></i>
+                <h3>Быстрая доставка</h3>
+                <p>Доставка по Москве в течение дня, по России - от 2 дней</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-percent"></i>
+                <h3>Гибкие скидки</h3>
+                <p>Скидки для оптовых покупателей и постоянных клиентов</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h3>Поддержка 24/7</h3>
+                <p>Квалифицированные консультации по всем вопросам</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2 class="section-title">Каталог товаров</h2>
+            <div class="categories">
+                <button class="category-btn active" data-category="all">Все товары</button>
+                <button class="category-btn" data-category="power">Электроинструмент</button>
+                <button class="category-btn" data-category="hand">Ручной инструмент</button>
+                <button class="category-btn" data-category="garden">Садовый инструмент</button>
+                <button class="category-btn" data-category="measure">Измерительные</button>
+            </div>
+            <div class="products" id="productsContainer">
+                <!-- Товары будут загружены через JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О нашей компании</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Компания "ПрофИнструмент" работает на рынке строительного оборудования с 2010 года. За это время мы зарекомендовали себя как надежного поставщика качественного инструмента для профессионалов и домашних мастеров.</p>
+                    <p>Мы сотрудничаем напрямую с ведущими производителями, что позволяет предлагать нашим клиентам лучшие цены без посредников.</p>
+                    <p>Наш ассортимент включает более 5000 наименований инструментов и сопутствующих товаров для строительства, ремонта и садовых работ.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Наш магазин">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <div class="reviews-container">
+                <div class="review">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Иван Петров">
+                        <div>
+                            <h4>Иван Петров</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Покупаю инструмент в этом магазине уже несколько лет. Всегда отличное качество и быстрая доставка. Особенно радуют акции и скидки для постоянных клиентов.</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Елена Смирнова">
+                        <div>
+                            <h4>Елена Смирнова</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Заказывала садовый инструмент, все пришло быстро и в хорошей упаковке. Консультант помог с выбором, объяснил особенности разных моделей. Буду обращаться еще.</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Алексей Козлов">
+                        <div>
+                            <h4>Алексей Козлов</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Работаю прорабом, закупаем инструмент для бригады только здесь. Ни разу не подвели, даже когда срочно нужны были специфические вещи - нашли и привезли быстро.</p>
+                </div>
+            </div>
+            <button class="btn" id="addReviewBtn">Оставить отзыв</button>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <h3>Наши реквизиты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Строителей, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                    <p><i class="fas fa-envelope"></i> info@profinstrument.ru</p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 20:00, Сб-Вс: 10:00 - 18:00</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Остались вопросы?</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Ваш email" required>
+                        <input type="tel" placeholder="Ваш телефон">
+                        <textarea placeholder="Ваш вопрос" required></textarea>
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="#">Электроинструмент</a></li>
+                        <li><a href="#">Ручной инструмент</a></li>
+                        <li><a href="#">Садовый инструмент</a></li>
+                        <li><a href="#">Измерительные приборы</a></li>
+                        <li><a href="#">Расходные материалы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Покупателям</h4>
+                    <ul>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Возврат</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Подписка на новости</h4>
+                    <form id="subscribeForm">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                    <p>Получайте информацию о новых поступлениях и специальных предложениях</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ПрофИнструмент. Все права защищены.</p>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Товары в корзине будут загружены через JS -->
+            </div>
+            <div class="cart-total">
+                <p>Итого: <span id="cartTotal">0</span> руб.</p>
+                <button class="btn" id="checkoutBtn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно оформления заказа -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оформление заказа</h2>
+            <form id="orderForm">
+                <input type="text" placeholder="ФИО" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Телефон" required>
+                <textarea placeholder="Адрес доставки" required></textarea>
+                <select>
+                    <option value="">Способ оплаты</option>
+                    <option value="cash">Наличными при получении</option>
+                    <option value="card">Банковской картой онлайн</option>
+                    <option value="invoice">По счету для юр. лиц</option>
+                </select>
+                <button type="submit" class="btn">Подтвердить заказ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно отзыва -->
+    <div class="modal" id="reviewModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оставить отзыв</h2>
+            <form id="reviewForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <div class="rating">
+                    <span>Оценка:</span>
+                    <div class="stars">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="ratingValue" value="0">
+                </div>
+                <textarea placeholder="Ваш отзыв" required></textarea>
+                <button type="submit" class="btn">Отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
